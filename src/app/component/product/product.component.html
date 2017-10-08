@@ -1,0 +1,30 @@
+  
+
+  <div>
+    <label>Selected Product</label>
+      <table>
+          <tr>
+            <td>{{selectedProduct.id}}</td>
+            <td>{{selectedProduct.name}}</td>
+            <td>{{selectedProduct.quantity}}</td>
+            <td>{{selectedProduct.prize}}</td>
+            <td>{{selectedProduct.inStock}}</td>
+          </tr>
+      </table>
+  </div>
+  <p>
+      Product list
+    </p>
+    <div>
+      <div *ngFor="let product of productList" (click)='getDetails(product)'>
+        <table>
+          <tr>
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.prize}}</td>
+            <td>{{product.inStock}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>

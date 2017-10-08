@@ -1,0 +1,19 @@
+<p>
+  User List
+</p>
+
+<table>
+    <tr>
+      <td>S.No</td>
+      <td>User Id</td>
+      <td>Name</td>
+      <td></td>
+    </tr>
+
+    <tr *ngFor="let user of userList">
+      <td></td>
+      <td>{{user.userId}}</td>
+      <td>{{user.name}}</td>
+      <td><button (click)="getUserDetails(user)" ></button></td>
+    </tr>
+</table>
